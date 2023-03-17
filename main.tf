@@ -31,7 +31,7 @@ resource "aws_subnet" "pub_sub1" {
 resource "aws_subnet" "pub_sub2" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = var.pub_sub2_cidr_block
-  availability_zone       = "ap-southeast-2a"
+  availability_zone       = "ap-southeast-2b"
   map_public_ip_on_launch = true
   tags = {
     Project = "demo-assignment"
