@@ -1,13 +1,13 @@
 variable "ami"{
  type = string
-  default = "ami-010aff33ed5991201"
+  default = "ami-07fd71119129438ff"
 }
 variable "keyname"{
   default = "MY-TEMP-PVT-INSTANCE"
 }
 variable "region" {
   type        = string
-  default     = "ap-south-1"
+  default     = "ap-southeast-2"
   description = "default region"
 }
 
