@@ -1,13 +1,5 @@
-#!/bin/bash
-
-# Create mount volume for logs
-  sudo su - root
-  mkfs.ext4 /dev/sdf
-  mount -t ext4 /dev/sdf /var/log
-
-# Install & Start nginx server
-  yum search nginx 
-  yum install httpd
-  service http start
-  chkconfig httpd on
-  
+#!/bin/bash 
+yum install httpd
+echo "<h1> Hello World </h1>"> /var/www/html/index.html
+service http start
+chkconfig httpd on
