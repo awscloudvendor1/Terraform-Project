@@ -3,7 +3,7 @@ variable "ami"{
   default = "ami-07fd71119129438ff"
 }
 variable "keyname"{
-  default = "MY-TEMP-PVT-INSTANCE"
+  default = "terra"
 }
 variable "region" {
   type        = string
